@@ -9,6 +9,7 @@ _Store
 *.orig
 
 build/
+.build/
 
 *.pbxuser
 *.perspective
@@ -18,3 +19,5 @@ xcuserdata
 *.dSYM.zip
 *.ipa
 *.mobileprovision
+.build/
+.swiftpm/

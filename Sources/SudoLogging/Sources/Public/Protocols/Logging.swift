@@ -7,7 +7,7 @@
 import Foundation
 
 /// `Logging` conforming instances provide a convenience method to generate a `Logger` instance
-public protocol Logging: class {
+public protocol Logging: AnyObject {
 
     /// Will generate a new `Logger` instance with the given identifier
     /// - Parameter logIdentifier: Identifier (preferably unique) used in the output message when logging
