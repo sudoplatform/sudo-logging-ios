@@ -7,7 +7,7 @@
 import Foundation
 
 /// Class that abstracts `LogDriverProtocol` instance and provides convenience methods for general logging
-public final class Logger {
+public final class Logger: Sendable {
 
     // MARK: - Properties
 

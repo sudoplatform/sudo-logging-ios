@@ -7,7 +7,7 @@
 import Foundation
 
 /// `LogDriverProtocol` conforming instance
-public protocol LogDriverProtocol {
+public protocol LogDriverProtocol: Sendable {
 
     /// The maximum `LogLevel` type the driver can process. Any logs above this level will not be logged.
     var logLevel: LogLevel { get set }

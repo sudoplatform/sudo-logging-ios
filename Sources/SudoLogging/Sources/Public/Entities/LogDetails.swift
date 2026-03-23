@@ -7,7 +7,7 @@
 import Foundation
 
 /// Basic struct holding information about a log request
-public struct LogDetails: Equatable {
+public struct LogDetails: Equatable, Sendable {
 
     /// The identifier assigned to the `Logger` instance that invoked the output message
     public var identifier: String
