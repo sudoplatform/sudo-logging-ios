@@ -1,10 +1,10 @@
-// swift-tools-version: 5.7
+// swift-tools-version: 6.0
 import PackageDescription
 
 let package = Package(
     name: "SudoLogging",
     platforms: [
-        .iOS(.v15),
+        .iOS(.v18),
     ],
     products: [
         .library(
@@ -13,9 +13,11 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "SudoLogging"),
+            name: "SudoLogging",
+            swiftSettings: [.swiftLanguageMode(.v5)]),
         .testTarget(
             name: "SudoLoggingTests",
-            dependencies: ["SudoLogging"]),
+            dependencies: ["SudoLogging"],
+            swiftSettings: [.swiftLanguageMode(.v5)]),
     ]
 )

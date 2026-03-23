@@ -7,7 +7,7 @@
 import Foundation
 
 /// `LogDriverProtocol` conforming instance that logs any messages and output errors using the `NSLog` helper
-public struct NSLogDriver: LogDriverProtocol {
+public struct NSLogDriver: LogDriverProtocol, Sendable {
 
     // MARK: - Properties: Static
 

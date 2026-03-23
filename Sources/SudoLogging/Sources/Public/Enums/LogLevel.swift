@@ -7,7 +7,7 @@
 import Foundation
 
 /// Enumeration of supported logging levels
-public enum LogLevel: Int, CaseIterable, Comparable, CustomStringConvertible {
+public enum LogLevel: Int, CaseIterable, Comparable, CustomStringConvertible, Sendable {
     case verbose = 0
     case debug
     case info
